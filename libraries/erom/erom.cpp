@@ -16,7 +16,7 @@ Access::Access(size_t aBase) : _base(aBase), _memory_size(device_memory_size()) 
 
 bool Access::read_bit(size_t aAddress, byte aBit) const {
   if (aBit > 7 || !in_range(aAddress + sizeof(uint8_t))) return false; 
-  byte byteVal = eeprom_read_byte((unsigned char *) aAddress);      
+  byte byteVal = eeprom_read_byte(reinterpret_cast<unsigned char*>(aAddress + base()));
   return (byteVal & (1 << aBit));
 }
 
