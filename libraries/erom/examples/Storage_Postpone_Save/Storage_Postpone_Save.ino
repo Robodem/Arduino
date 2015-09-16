@@ -112,9 +112,9 @@ void loop() {
   if (recording) {
     storage.A0 = analogRead(A0);
     storage.A1 = analogRead(A1);
-    storage.postpone_save(3000);  // Save data to EEPROM every 3 seconds
+    storage.postpone_save(30000);  // Save data to EEPROM every 30 seconds
   }
 
-  storage.tick(); // Calls 'save()' when needed (i.e., every 3 seconds)
+  storage.tick(); // Calls 'save()' when needed (i.e., every 30 seconds)
 }
 

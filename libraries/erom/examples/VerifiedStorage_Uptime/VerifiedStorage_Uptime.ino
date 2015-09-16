@@ -87,7 +87,7 @@ void loop() {
     storage.uptime += __millis - last_update_time;
     storage.save();
     last_update_time = __millis;
-    update_data_time = __millis + 1000;
+    update_data_time = __millis + 15000;  // Save new time every 15 seconds
     print_values();
   }
 }
