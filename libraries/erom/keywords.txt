@@ -1,0 +1,86 @@
+#######################################
+# Syntax Coloring Map For erom
+#######################################
+
+#######################################
+# Instances (KEYWORD1)
+#######################################
+
+erom	KEYWORD1
+
+#######################################
+# Methods and Functions erom (KEYWORD2)
+#######################################
+
+### Access
+read	KEYWORD2
+read_bit	KEYWORD2
+read_byte	KEYWORD2
+read_char	KEYWORD2
+read_int	KEYWORD2
+read_long	KEYWORD2
+read_float	KEYWORD2
+read_double	KEYWORD2
+
+write	KEYWORD2
+write_bit	KEYWORD2
+write_byte	KEYWORD2
+write_char	KEYWORD2
+write_int	KEYWORD2
+write_long	KEYWORD2
+write_float	KEYWORD2
+write_double	KEYWORD2
+
+update	KEYWORD2
+update_bit	KEYWORD2
+update_byte	KEYWORD2
+update_char	KEYWORD2
+update_int	KEYWORD2
+update_long	KEYWORD2
+update_float	KEYWORD2
+update_double	KEYWORD2
+
+read_block	KEYWORD2
+write_block	KEYWORD2
+update_block	KEYWORD2
+is_ready	KEYWORD2
+in_range	KEYWORD2
+base	KEYWORD2
+memory_size	KEYWORD2
+
+### Entry
+assign	KEYWORD2
+save	KEYWORD2
+load	KEYWORD2
+address	KEYWORD2
+type	KEYWORD2
+size	KEYWORD2
+value	KEYWORD2
+
+### Storage
+OnLoad	KEYWORD2
+OnSave	KEYWORD2
+OnClear	KEYWORD2
+
+issue	KEYWORD2
+load	KEYWORD2
+save	KEYWORD2
+clear	KEYWORD2
+postpone_save	KEYWORD2
+tick	KEYWORD2
+access	KEYWORD2
+size	KEYWORD2
+
+### Verified storage
+verify	KEYWORD2
+app_id	KEYWORD2
+version	KEYWORD2
+stored_app_id	KEYWORD2
+stored_version	KEYWORD2
+
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+device_memory_size	LITERAL1
+instance	LITERAL1

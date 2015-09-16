@@ -44,6 +44,7 @@ protected:
   // NOTE: when overridden, 'VerifiedStorage::OnClear()' must be called by user
   // in order for 'VerifiedStorage' to work properly
   virtual void OnClear() { Storage::OnClear(); _clear_header(); }
+
   // Override to specify the checking rules for data validity. By default
   // EEPROM data AppID and VersionID must be equal to sketch's AppID and Version
   // NOTE: when overridden, 'VerifiedStorage::OnVerify()' must be called by user
@@ -54,6 +55,7 @@ public:
   // Create 'VerifiedStorage' with specified Application ID and Version Number
   // for use with default access.
   VerifiedStorage(uint16_t aAppID, uint16_t aVersion);
+
   // Create 'VerifiedStorage' with specified Application ID and Version Number
   // for use with user-defined access.
   VerifiedStorage(Access &aAccess, uint16_t aTargetAppID, uint16_t aTargetVersion);
