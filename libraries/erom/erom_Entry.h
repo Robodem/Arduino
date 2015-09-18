@@ -58,9 +58,9 @@ public:
   //  Serial.print(v.value);  // Ensure 'print' works with original type (i.e., 'int')
   //
   // Example2:
-  //  Entry<int> v(0, 100); // Set EEPROM address to '0' and RAM value to 100
+  //  Entry<int> v(0, 100); // Set EEPROM address to '0' and RAM value to '100'
   //  v.save();             // Write value ('100') to EEPROM
-  //  v = 0;                // Set RAM value to 200
+  //  v = 0;                // Set RAM value to '0'
   //  v.load();             // Load value from EEPROM
   //  if (v != 100) Serial.print("EEPROM write error!");
   inline operator type() const { return value; }
