@@ -98,6 +98,12 @@ public:
     if (!_save_requested || aRestartDelay) _save_requested = true, _save_time = millis() + aDelay;
   }
 
+  // Returns true if there is a postponed save pending
+  inline bool postpone_save_requested() const { return _save_requested; }
+
+  // Planned save time of a postponed save
+  inline unsigned long postpone_save_time() const { return _save_time; }
+
   // Must be called in the main program loop, in order to call 'save()' as per
   // posponed save requests.
   inline void tick() { if (_save_requested && _save_time <= millis()) save(), _save_requested = false; }

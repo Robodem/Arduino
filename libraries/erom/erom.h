@@ -6,6 +6,7 @@
 // header files but this one.
 // -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- //
 // Avoid linkage bugs in Arduino/AVR libraries
+#if ARDUINO <= 105
 #ifndef __AVR_ATmega2560__
 #define __AVR_ATmega2560__
 #include <avr/eeprom.h>
@@ -13,6 +14,7 @@
 #else // __AVR_ATmega2560__
 #include <avr/eeprom.h>
 #endif // __AVR_ATmega2560__
+#endif
 
 // Arduino stuff
 #if ARDUINO >= 100

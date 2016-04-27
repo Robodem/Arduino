@@ -64,6 +64,8 @@ public:
   //  v.load();             // Load value from EEPROM
   //  if (v != 100) Serial.print("EEPROM write error!");
   inline operator type() const { return value; }
+  inline operator const type&() const { return value; }
+  inline operator type&() { return value; }
 
   inline Entry& operator=(const type &aValue) { value = aValue; return *this; }
   inline type& operator+=(const type &aValue) { return value += aValue; }

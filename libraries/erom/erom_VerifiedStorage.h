@@ -63,9 +63,12 @@ public:
   // Verify storage version (AppID and VersionNo). If 'aAutoClear', 'verify'
   // will call 'clear' method, in order to reinitialize variables in RAM and
   // stored cleared RAM values to EEPROM.
-  // Returns true, if EEPROM data suits currently running application/sketch
-  // verification rules.
+  // Returns true, if EEPROM data header suits currently running
+  // application/sketch verification rules.
   // To define verification rules, one must override the 'OnVerify()' method.
+  //
+  // ***NOTE: Does NOT load data into memory, loads header data only.
+  //          Mind calling 'load()' upon successful verification.
   bool verify(bool aAutoClear = false);
 
   // Currently running application/sketch AppID and VersionNo

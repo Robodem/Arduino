@@ -15,7 +15,7 @@ public:
   erom::Entry<float> volume;
   erom::Entry<short> brightness;
 
-  // Binding/allocating varibale to EEPROM memory addresses
+  // Binding/allocating variable to EEPROM memory addresses
   Storage() { issue(volume); issue(brightness); }
 };
 
